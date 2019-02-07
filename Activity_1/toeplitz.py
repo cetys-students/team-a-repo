@@ -35,5 +35,28 @@
 
 class Solution:
         def isToeplitzMatrix(self, matrix: 'List[List[int]]') -> 'bool':
-                  pass
+
+        	for x in range(len(matrix)-1, 0, -1):
+        		for y in range(len(matrix[0])-1, 0, -1):
+                    
+        			if matrix[x][y] == matrix[x-1][y-1]:
+        				continue
+        			else:
+        				return False
+        	return True
+        	pass
+
+A = [
+    [1, 2, 3, 4],
+    [5, 1, 2, 3],
+    [9, 5, 1, 2]
+    ]
+
+B = [
+    [1,2],
+    [2,2]
+    ]
+
+s = Solution()
+print(s.isToeplitzMatrix(A))
 
