@@ -8,3 +8,9 @@ Main abilities: Climbing, Camping, Coding, Component Burning
 Interests: Audio, Outdoors, Automoviles, Acoustic Instruments
 Background: #00FFFF
 ```	
+* **Edgar Alcántara** 
+```bash
+Main abilities: 
+Interests: 
+Background: 
+```	
