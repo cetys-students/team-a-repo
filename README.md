@@ -26,4 +26,4 @@ Main abilities:
 Interests: 
 Background:
 ```	
->>>>>>> Stashed changes
+

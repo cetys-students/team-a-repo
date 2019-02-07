@@ -13,8 +13,19 @@
 import re
 class Solution:
         def isPalindrome(self, s: 'str') -> 'bool':
-                  s = re.sub(r'\W+', '', "Esto es una _prue'ba.:;=@#")
+                  s = re.sub(r'\W+', '', s)
                   print(s)
-p = Solution().isPalindrome("sadasd")
+                  s2 = s[::-1]
+                  print(s2)
+                  if s == s2:
+                          return True
+                  else:
+                        return False
+
+
+
+
+                  
+p = Solution().isPalindrome("anita lava la tina")
 
 
