@@ -22,8 +22,8 @@ Background: ...
 
 * **Julio Salceda** 
 ```bash
-Main abilities: 
-Interests: 
-Background:
+Main abilities: Coding, problem-solving.
+Interests: Reading, videogames, puzzles.
+Background: Analog Electronics I car burning Champion.
 ```	
 
