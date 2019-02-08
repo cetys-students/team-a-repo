@@ -10,14 +10,15 @@ Background: #00FFFF
 <<<<<<< Updated upstream
 ```
 
-* **Edgar Alcántara**
+* **Gerardo Martinez**
 
 ~~~
-Main abilities: Problem solving
-Interest: Sports
-Background: Regular under-grade student
+Main abilities: Be a great professor.
+Interest: Teach and code.
+Background: ...
 ~~~
-	
+=======
+```	
 
 * **Julio Salceda** 
 ```bash
