@@ -9,11 +9,12 @@ Interests: Audio, Outdoors, Automoviles, Acoustic Instruments
 Background: #00FFFF
 ```
 
-* **Gerardo Martinez**
+* **Edgar Alcántara**
 ```bash
-Main abilities: Be a great professor.
-Interest: Teach and code.
-Background: ...
+Main abilities: Problem solving
+Interest: Sports
+
+Background: Regular under-grade student
 ```
 
 * **Julio Salceda** 
