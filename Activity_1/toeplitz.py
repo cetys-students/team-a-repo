@@ -44,7 +44,6 @@ class Solution:
         			else:
         				return False
         	return True
-        	pass
 
 A = [
     [1, 2, 3, 4],
