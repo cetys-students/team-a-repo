@@ -11,10 +11,10 @@ Background: #00FFFF
 
 * **Edgar Alcántara**
 ```bash
-Main abilities: Problem solving
-Interest: Girls
+Main abilities: Benching 90Kgs with ease, wearing sunglasses and not giving a %$#@
+Interest: Girls, Hunting, 
 
-Background: Regular under-grade student
+Background: Just a regular 14yo
 ```
 
 * **Julio Salceda** 
