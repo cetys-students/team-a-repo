@@ -19,14 +19,14 @@ class Solution:
                   print("Al revés: ",s2)
 
                   if s == s2:
-                          print(True)
+                          return True
                   else:
-                        print(False)
+                        return False
 
 
 
 
                   
-p = Solution().isPalindrome("anita lava la tina")
-
+p = Solution().isPalindrome("anxita lava la tina")
+print(p)
 
