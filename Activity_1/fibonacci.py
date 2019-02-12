@@ -29,5 +29,18 @@
 
 class Solution:
         def fib(self, N: 'int') -> 'int':
-                  pass
-hola
+               inval = N
+               print(inval) 
+               aval = 1
+               bval = 1
+               count = 0
+               while count < inval:
+                      if inval == 0:
+                       print(inval)
+                       break 
+                      aval,bval = bval,aval+bval 
+                      count = count+1
+                      print(aval, ',')
+                      
+val = 0
+p = Solution().fib(val)
