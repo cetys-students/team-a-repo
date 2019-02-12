@@ -12,7 +12,7 @@ Background: #00FFFF
 * **Edgar Alcántara**
 ```bash
 Main abilities: Problem solving
-Interest: Sports
+Interest: Girls
 
 Background: Regular under-grade student
 ```
