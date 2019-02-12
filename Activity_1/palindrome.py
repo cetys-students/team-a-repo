@@ -13,6 +13,7 @@
 import re
 class Solution:
         def isPalindrome(self, s: 'str') -> 'bool':
+                  s = s.lower()
                   s = re.sub(r'\W+', '', s)
                   print("Al derecho: ",s)
                   s2 = s[::-1]
@@ -27,6 +28,6 @@ class Solution:
 
 
                   
-p = Solution().isPalindrome("anxita lava la tina")
+p = Solution().isPalindrome("A man, a plan, a canal: Panama")
 print(p)
 
