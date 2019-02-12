@@ -14,9 +14,10 @@ import re
 class Solution:
         def isPalindrome(self, s: 'str') -> 'bool':
                   s = re.sub(r'\W+', '', s)
-                  print(s)
+                  print("Al derecho: ",s)
                   s2 = s[::-1]
-                  print(s2)
+                  print("Al revés: ",s2)
+
                   if s == s2:
                           return True
                   else:
@@ -26,6 +27,6 @@ class Solution:
 
 
                   
-p = Solution().isPalindrome("anita lava la tina")
-
+p = Solution().isPalindrome("anxita lava la tina")
+print(p)
 
