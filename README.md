@@ -11,10 +11,10 @@ Background: #00FFFF
 
 * **Edgar Alcántara**
 ```bash
-Main abilities: Benching 90Kgs with ease, wearing sunglasses and not giving a %$#@
-Interest: Girls, Hunting, 
+Main abilities: Get cold with ease
+Interest: The AT89C51 microcontroller
 
-Background: Just a regular 14yo
+Background: Got into electronics bc of the Arduino
 ```
 
 * **Julio Salceda** 
