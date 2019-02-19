@@ -40,7 +40,7 @@ class Solution:
                        break 
                       aval,bval = bval,aval+bval 
                       count = count+1
-                      print(aval, ',')
+                      return (aval, ',')
                       
 val = 0
 p = Solution().fib(val)
