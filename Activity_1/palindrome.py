@@ -21,8 +21,7 @@ class Solution:
 
                   if s == s2:
                           return True
-                  else:
-                        return False
+                  return False
 
 
 
