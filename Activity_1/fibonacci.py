@@ -29,18 +29,21 @@
 
 class Solution:
         def fib(self, N: 'int') -> 'int':
-               inval = N
-               print(inval) 
-               aval = 1
-               bval = 1
-               count = 0
-               while count < inval:
-                      if inval == 0:
-                       print(inval)
-                       break 
-                      aval,bval = bval,aval+bval 
-                      count = count+1
-                      return (aval, ',')
+                inval = N
+                print(inval) 
+                aval = 1
+                bval = 1
+                count = 0
+                array = []
+                while count <= inval:
+                        if inval == 0:
+                                array.append(inval)
+                                return(array)
+                        aval,bval = bval,aval+bval
+                        array.append(aval)
+                        count = count+1
+                return (array)
                       
-val = 0
+val = 10
 p = Solution().fib(val)
+print("\t ", p, end='')
