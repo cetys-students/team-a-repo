@@ -30,3 +30,18 @@ class LSM303D(IntEnum):
     OUT_Y_H_A = 0x2B
     OUT_Z_L_A = 0x2C
     OUT_Z_H_A = 0x2D
+
+class L3GD20H(intEnum):
+    STATUS_G = 0x27
+    OUT_X_L_G = 0x29
+    OUT_X_H_G = 0x2A
+    OUT_Y_L_G = 0x2B
+    OUT_Y_L_G = 0x2C
+    OUT_Z_L_G = 0x2D
+    OUT_Z_H_G = 0x2E
+    WHO_AM_I = 0X0F
+    CTRL1 = 0x20
+    CTRL2 = 0x21
+    CTRL3 = 0x22
+    CTRL4 = 0x23
+    CTRL5 = 0x24
