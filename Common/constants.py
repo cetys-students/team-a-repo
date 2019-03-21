@@ -32,16 +32,31 @@ class LSM303D(IntEnum):
     OUT_Z_H_A = 0x2D
 
 class L3GD20H(intEnum):
-    STATUS_G = 0x27
-    OUT_X_L_G = 0x29
-    OUT_X_H_G = 0x2A
-    OUT_Y_L_G = 0x2B
-    OUT_Y_L_G = 0x2C
-    OUT_Z_L_G = 0x2D
-    OUT_Z_H_G = 0x2E
     WHO_AM_I = 0X0F
     CTRL1 = 0x20
     CTRL2 = 0x21
     CTRL3 = 0x22
     CTRL4 = 0x23
     CTRL5 = 0x24
+    REFERENCE = 0x25
+    OUT_TEMP = 0x26
+    STATUS_G = 0x27
+    OUT_X_L_G = 0x28
+    OUT_X_H_G = 0x29
+    OUT_Y_L_G = 0x2A
+    OUT_Y_L_G = 0x2B
+    OUT_Z_L_G = 0x2C
+    OUT_Z_H_G = 0x2D
+    FIFO_CTRL = 0x2E
+    FIFO_SRC = 0x2F
+    IG_CFG = 0x30
+    IG_SRC = 0X31
+    IG_THS_XH = 0x32
+    IG_THS_XL = 0x33
+    IG_THS_YH = 0x34
+    IG_THS_YL = 0x35
+    IG_THS_ZH = 0x36
+    IG_THS_ZL = 0x37
+    IG_DURATION = 0x38
+    LOW_ODR = 0x39
+    
