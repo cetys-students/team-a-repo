@@ -62,7 +62,7 @@ class AltIMUv3(I2C):
 
         # Check if accelerometer has been enabled
         if not self.is_accel_enabled:
-            raise(Exception('Accelerometer is not enabled!'))
+            raise(Exception('Accelerometer is not enabled'))
 
         return self.read_sensor(LSM303D_Address, self.accel_registers)
 
@@ -73,7 +73,7 @@ class AltIMUv3(I2C):
 
         # Check if gyroscope has been enabled
         if not self.is_gyro_enabled:
-            raise(Exception('Gyroscope is not enabled!'))
+            raise(Exception('Gyroscope is not enabled'))
 
         return self.read_sensor(L3GD20H_Address, self.gyro_registers)
 
