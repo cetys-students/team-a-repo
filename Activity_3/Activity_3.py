@@ -33,3 +33,4 @@ def sample_integral(samples, sampling_period):
         area += ((samples[i] + samples[i+1])*sampling_period)/2
         result.append(area)
     return result
+    
