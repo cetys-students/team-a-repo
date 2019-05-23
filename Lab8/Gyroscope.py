@@ -6,7 +6,7 @@ import Activity_3 as Integral
 
 # Setup
 LCD = CharLCD(cols = 16, rows = 2, pin_rs = 37, pin_e = 35, pins_data = [33,31,29,23])
-Button = 32
+Button = 12
 GPIO.setup(Button, GPIO.IN)
 altimu = AltIMUv3()
 altimu.enable_gyroscope()
@@ -53,7 +53,7 @@ while True:
 ##        previous = gyro[2] - initial_zero
 ##        LCD.clear()
 ##        break
-##    
+##
 ##while True:
 ##    # Data readings
 ##    LCD.clear()
@@ -63,4 +63,3 @@ while True:
 ##    previous = actual
 ##    LCD.write_string(str(area))
 ##    time.sleep(sampling_period)
-        
