@@ -24,7 +24,7 @@ while True:
     gravity = math.sqrt(math.pow(accel[0],2)+math.pow(accel[1],2)+math.pow(accel[2],2))
     if lowest_value <= gravity <= highest_value:
         GPIO.output(LED1,True)
-        print('estable')
+        print('stable')
         if Limit2 <= accel_z <= Limit1:
             GPIO.output(LED2,True)
         
