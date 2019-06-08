@@ -33,12 +33,7 @@ class MCP3204:
 
                 # send & receive data
                 reply_bytes = self.conn.xfer2([cmd, 0, 0, 0])
-
-                #
                 reply_bitstring = ''.join(self.bitstring(n) for n in reply_bytes)
-
-
-                # see also... http://akizukidenshi.com/download/MCP3204.pdf (page.20)
                 reply = reply_bitstring[5:19]
                 return int(reply, 2)
 
@@ -51,4 +46,3 @@ class MCP3204:
                         if bDebug:
                                 print('nAverage={:d}: mean value={:7.2f}ticks'.format(nAverage, fMean))
                         return fMean
-
