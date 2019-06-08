@@ -4,7 +4,7 @@ from RPi import GPIO
 import time
 import Activity_3 as Integral
 
-# Setup
+# LCD and GPIO Setup
 LCD = CharLCD(cols = 16, rows = 2, pin_rs = 37, pin_e = 35, pins_data = [33,31,29,23])
 Button = 12
 GPIO.setup(Button, GPIO.IN)
@@ -12,9 +12,10 @@ altimu = AltIMUv3()
 altimu.enable_gyroscope()
 LCD.clear()
 initial_zero, previous = 0, 0
-LCD.write_string(u'Presione el boton para iniciar')
+LCD.write_string(u'Press the button to start...')
 area, actual, sampling_period, value = 0, 0, 0.1, 0
 
+# Calibration function
 def calibrate():
     average = 0
     LCD.clear()
@@ -26,9 +27,14 @@ def calibrate():
     last_sample = gyro[2]
     return average, last_sample
 
+# Button while loop
 while value == 0:
     value = GPIO.input(Button)
+
+# First calibration
 bias, previous = calibrate()
+
+# Data aquisition and processing
 while True:
     gyro = altimu.get_gyroscope_cal()
     actual = gyro[2] - bias
@@ -41,25 +47,3 @@ while True:
         bias, previous = calibrate()
     time.sleep(sampling_period)
     LCD.clear()
-
-
-
-
-##while True:
-##    value = GPIO.input(Button)
-##    if value == 1:
-##        initial_zero = calibrate()
-##        gyro = altimu.get_gyroscope_cal()
-##        previous = gyro[2] - initial_zero
-##        LCD.clear()
-##        break
-##
-##while True:
-##    # Data readings
-##    LCD.clear()
-##    gyro = altimu.get_gyroscope_cal()
-##    actual = gyro[2] - initial_zero
-##    area += ((actual + previous)/2)*sampling_period
-##    previous = actual
-##    LCD.write_string(str(area))
-##    time.sleep(sampling_period)
